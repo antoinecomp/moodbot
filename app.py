@@ -1,16 +1,20 @@
-from flask import Flask, render_template, flash, redirect, url_for, session, request, logging
+from flask import Flask, render_template, flash, redirect, url_for, session, request, logging, jsonify
 #from data import Articles
 from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
+import requests
+
+#for chatbot
+import random
 
 app = Flask(__name__)
 
 # Config MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '123456'
+app.config['MYSQL_PASSWORD'] = 'root'
 app.config['MYSQL_DB'] = 'myflaskapp'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 # init MYSQL
@@ -28,6 +32,11 @@ def index():
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+# bot
+@app.route('/bot')
+def bot():
+    return render_template('bot.html')
 
 
 # Articles
@@ -273,6 +282,28 @@ def delete_article(id):
     flash('Article Deleted', 'success')
 
     return redirect(url_for('dashboard'))
+
+@app.route('/chat',methods=["POST"])
+def chat():
+    try:
+        user_message = request.form["text"]
+        response = requests.get("http://localhost:5000/parse",params={"q":user_message})
+        response = response.json()
+        entities = response.get("entities")
+        topresponse = response["topScoringIntent"]
+        intent = topresponse.get("intent")
+        print("Intent {}, Entities {}".format(intent,entities))
+        if intent == "gst-info":
+            response_text = gst_info(entities)# "Sorry will get answer soon" #get_event(entities["day"],entities["time"],entities["place"])
+        elif intent == "gst-query":
+            response_text = gst_query(entities)
+        else:
+            response_text = get_random_response(intent)
+        return jsonify({"status":"success","response":response_text})
+    except Exception as e:
+        print("HOUSTON ! WE GOT AN EXCETPITON !")
+        print(e)
+        return jsonify({"status":"success","response":"Sorry I am not trained to do that yet..."})
 
 if __name__ == '__main__':
     app.secret_key='secret123'

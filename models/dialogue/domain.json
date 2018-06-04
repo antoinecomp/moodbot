@@ -1,0 +1,28 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_goodbye",
+    "intent_inform",
+    "entity_location",
+    "entity_mood",
+    "entity_information",
+    "entity_adjective",
+    "slot_adjective_0",
+    "slot_information_0",
+    "slot_location_0",
+    "slot_mood_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_utter_ask_location",
+    "prev_action_weather",
+    "prev_utter_joy",
+    "prev_utter_fear",
+    "prev_utter_anger",
+    "prev_utter_sadness",
+    "prev_utter_disgust",
+    "prev_utter_shame",
+    "prev_utter_guilt"
+  ]
+}

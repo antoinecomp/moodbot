@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pandoc
+Version: 1.0.2
+Summary: Pandoc Documents for Python
+Home-page: https://github.com/boisgera/pandoc
+Author: Sébastien Boisgérault
+Author-email: Sebastien.Boisgerault@mines-paristech.fr
+License: MIT License
+Description: GitHub: https://github.com/boisgera/pandoc
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Text Processing

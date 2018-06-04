@@ -1,0 +1,172 @@
+Metadata-Version: 2.1
+Name: rasa-core
+Version: 0.9.0a3
+Summary: Machine learning based dialogue engine for conversational software.
+Home-page: https://rasa.ai
+Author: Rasa Technologies GmbH
+Author-email: hi@rasa.com
+Maintainer: Tom Bocklisch
+Maintainer-email: tom@rasa.com
+License: Apache 2.0
+Download-URL: https://github.com/RasaHQ/rasa_core/archive/0.9.0a3.tar.gz
+Project-URL: Source, https://github.com/rasahq/rasa_core
+Project-URL: Bug Reports, https://github.com/rasahq/rasa_core/issues
+Keywords: nlp machine-learning machine-learning-library bot bots botkit rasa conversational-agents conversational-ai chatbotchatbot-framework bot-framework
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: jsonpickle
+Requires-Dist: six
+Requires-Dist: redis
+Requires-Dist: fakeredis
+Requires-Dist: nbsphinx
+Requires-Dist: pandoc
+Requires-Dist: future
+Requires-Dist: numpy (>=1.13)
+Requires-Dist: typing (>=3.6)
+Requires-Dist: requests
+Requires-Dist: graphviz
+Requires-Dist: Keras
+Requires-Dist: tensorflow
+Requires-Dist: h5py
+Requires-Dist: apscheduler
+Requires-Dist: tqdm
+Requires-Dist: ConfigArgParse
+Requires-Dist: networkx
+Requires-Dist: fbmessenger (>=5.0.0)
+Requires-Dist: pykwalify (<=1.6.0)
+Requires-Dist: coloredlogs
+Requires-Dist: ruamel.yaml
+Requires-Dist: flask
+Requires-Dist: scikit-learn
+Requires-Dist: rasa-nlu (<0.13.0,>=0.12.0)
+Requires-Dist: slackclient
+Requires-Dist: python-telegram-bot
+Requires-Dist: twilio
+Requires-Dist: mattermostwrapper
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-pep8; extra == 'test'
+Requires-Dist: pytest-services; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-xdist; extra == 'test'
+Requires-Dist: pytest-twisted (<1.6); extra == 'test'
+Requires-Dist: treq; extra == 'test'
+Requires-Dist: freezegun; extra == 'test'
+
+# Rasa Core
+[![Join the chat on Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/RasaHQ/rasa_core?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/RasaHQ/rasa_core.svg?branch=master)](https://travis-ci.org/RasaHQ/rasa_core)
+[![Coverage Status](https://coveralls.io/repos/github/RasaHQ/rasa_core/badge.svg?branch=master)](https://coveralls.io/github/RasaHQ/rasa_core?branch=master)
+[![PyPI version](https://img.shields.io/pypi/v/rasa_core.svg)](https://pypi.python.org/pypi/rasa-core)
+
+- **What do Rasa Core & NLU do? 🤔** [Read About the Rasa Stack](https://rasa.com/products/rasa-stack/)
+
+- **I'd like to read the detailed docs 🤓** [Read The Docs](https://core.rasa.com)
+
+- **I'm ready to install Rasa Core! 🚀** [Installation](https://core.rasa.com/installation.html)
+
+- **I have a question ❓** [Gitter channel](https://gitter.im/RasaHQ/rasa_core)
+
+- **I would like to contribute 🤗** [How to contribute](#how-to-contribute)
+
+
+## Introduction
+
+Rasa Core is a framework for building conversational software, which includes:
+- chatbots on Messenger
+- Slack bots
+- Alexa Skills
+- Google Home Actions
+
+etc. 
+
+Rasa Core's primary purpose is to help you build contextual, layered conversations with lots of back-and-forth.
+To have a real conversation, you need to have some memory and build on things that were said earlier.
+Rasa Core lets you do that in a scalable way. 
+
+There's a lot more background information in this [blog post](https://medium.com/rasa-blog/a-new-approach-to-conversational-software-2e64a5d05f2a)
+
+## Where to get help
+
+There is extensive documentation:
+
+- [master](https://core.rasa.com/master/)&nbsp; (if you install from **github**) or 
+- [stable](https://core.rasa.com/)&nbsp;&nbsp; (if you install from **pypi**)
+
+
+Please use [gitter](https://gitter.im/RasaHQ/rasa_core) for quick answers to 
+questions.
+
+
+
+### README Contents:
+- [How to contribute](#how-to-contribute)
+- [Development Internals](#development-internals)
+- [License](#license)
+
+### How to contribute
+We are very happy to receive and merge your contributions. There is some more information about the style of the code and docs in the [documentation](https://nlu.rasa.com/contribute.html).
+
+In general the process is rather simple:
+1. create an issue describing the feature you want to work on (or have a look at issues with the label [help wanted](https://github.com/RasaHQ/rasa_core/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22))
+2. write your code, tests and documentation
+3. create a pull request describing your changes
+
+You pull request will be reviewed by a maintainer, who might get back to you about any necessary changes or questions. You will also be asked to sign a [Contributor License Agreement](https://cla-assistant.io/RasaHQ/rasa_core)
+
+
+## Development Internals
+### Running and changing the documentation
+To build & edit the docs, first install all necessary dependencies:
+
+```
+brew install sphinx
+pip install -r dev-requirements.txt
+```
+
+After the installation has finished, you can run and view the documentation 
+locally using
+```
+make livedocs
+```
+
+Visit the local version of the docs at http://localhost:8000 in your browser. 
+You can now change the docs locally and the web page will automatically reload
+and apply your changes.
+
+## License
+Licensed under the Apache License, Version 2.0. Copyright 2018 Rasa Technologies GmbH. [Copy of the license](LICENSE.txt).
+
+As a reference, the following contains a listing of the licenses of the different dependencies as of this writing. 
+Licenses of the dependencies:
+
+| required package | License              |
+|------------------|----------------------|
+| apscheduler      | MIT                  |
+| fakeredis        | BSD                  |
+| graphviz         | MIT                  |
+| typing           | PSF                  |
+| future           | MIT                  |
+| six              | MIT                  |
+| h5py             | BSD                  |
+| jsonpickle       | BSD                  |
+| keras            | MIT                  |
+| numpy            | BSD                  |
+| pandoc           | MIT                  |
+| redis            | MIT                  |
+| tensorflow       | Apache Licence 2.0   |
+| networkx         | BSD                  |
+| fbmessenger      | Apache Licence 2.0   |
+| tqdm             | MIT                  |
+| ConfigArgParse   | MIT                  |
+
+

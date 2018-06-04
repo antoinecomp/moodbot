@@ -1,0 +1,59 @@
+slots:
+  location:
+    type: text
+  mood:
+    type: text
+  information:
+    type: text
+  adjective:
+    type: text
+
+# intention the bot is able to recognize from the sentences
+intents:
+ - greet
+ - goodbye
+ - inform
+
+# entities he may be able to extract
+entities:
+ - location
+ - mood
+ - information
+ - adjective
+
+# actions the bot can take
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_ask_location
+ - actions.ActionWeather
+ - utter_joy
+ - utter_fear
+ - utter_anger
+ - utter_sadness
+ - utter_disgust
+ - utter_shame
+ - utter_guilt
+
+templates:
+  utter_greet:
+    - 'Hello! How can I help?'
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye bye :('
+  utter_ask_location:
+    - 'In what location?'
+  utter_joy:
+    - 'Am so happy for you'
+  utter_fear:
+    - 'you shouldn be afraid'
+  utter_anger:
+    - 'Calm down, everything gonna be alright'
+  utter_sadness:
+    - 'be a tough guy'
+  utter_disgust:
+    - 'I understand, this is disgusting, we should get over it'
+  utter_shame:
+    - 'Ridicule does not kill'
+  utter_guilt:
+    - 'You must not feel guilty, feel proud'

@@ -1,0 +1,72 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- action_weather
+- utter_joy
+- utter_fear
+- utter_anger
+- utter_sadness
+- utter_disgust
+- utter_shame
+- utter_guilt
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- actions.ActionWeather
+- utter_joy
+- utter_fear
+- utter_anger
+- utter_sadness
+- utter_disgust
+- utter_shame
+- utter_guilt
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- mood
+- information
+- adjective
+intents:
+- greet
+- goodbye
+- inform
+slots:
+  adjective:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  information:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  mood:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_anger:
+  - text: Calm down, everything gonna be alright
+  utter_ask_location:
+  - text: In what location?
+  utter_disgust:
+  - text: I understand, this is disgusting, we should get over it
+  utter_fear:
+  - text: you shouldn be afraid
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?
+  utter_guilt:
+  - text: You must not feel guilty, feel proud
+  utter_joy:
+  - text: Am so happy for you
+  utter_sadness:
+  - text: be a tough guy
+  utter_shame:
+  - text: Ridicule does not kill
+topics: []
