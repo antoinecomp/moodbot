@@ -1,6 +1,6 @@
 # FlaskApp
 
-Simple application with authentication and CRUD functionality using the Python Flask micro-framework
+Simple application with authentication, chatbot and CRUD functionality using the Python Flask micro-framework
 
 ## Installation
 
@@ -10,9 +10,5 @@ To use this template, your computer needs:
 - [Pip Package Manager](https://pypi.python.org/pypi)
 
 ### Running the app
-
-```bash
-python app.py
-```
 
 # myflaskapp
