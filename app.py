@@ -289,6 +289,7 @@ def chat():
         user_message = request.form["text"]
         response = requests.get("http://localhost:5000/parse",params={"q":user_message})
         response = response.json()
+        print(response) 
         entities = response.get("entities")
         topresponse = response["topScoringIntent"]
         intent = topresponse.get("intent")
@@ -307,4 +308,4 @@ def chat():
 
 if __name__ == '__main__':
     app.secret_key='secret123'
-    app.run(debug=True)
+    app.run(port=8000,debug=True)
