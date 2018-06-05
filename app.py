@@ -289,7 +289,7 @@ def chat():
         user_message = request.form["text"]
         response = requests.get("http://localhost:5000/parse",params={"q":user_message})
         response = response.json()
-        print(response) 
+        print("response :\n",response) 
         entities = response.get("entities")
         topresponse = response["topScoringIntent"]
         intent = topresponse.get("intent")
@@ -299,6 +299,7 @@ def chat():
         elif intent == "gst-query":
             response_text = gst_query(entities)
         else:
+            get_random_response = lambda intent:random.choice(intent_response_dict[intent])
             response_text = get_random_response(intent)
         return jsonify({"status":"success","response":response_text})
     except Exception as e:
