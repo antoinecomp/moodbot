@@ -5,6 +5,7 @@ from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
 import requests
+import json
 
 #for chatbot
 import random
@@ -286,24 +287,15 @@ def delete_article(id):
 @app.route('/chat',methods=["POST"])
 def chat():
     try:
-        user_message = request.form["text"]
-        response = requests.get("http://localhost:5000/parse",params={"q":user_message})
+        user_message = request.values.get("text")
+        response = requests.post('http://localhost:5005/conversations/default/respond', json={"query":user_message})
         response = response.json()
-        print("response :\n",response) 
-        entities = response.get("entities")
-        topresponse = response["topScoringIntent"]
-        intent = topresponse.get("intent")
-        print("Intent {}, Entities {}".format(intent,entities))
-        if intent == "gst-info":
-            response_text = gst_info(entities)# "Sorry will get answer soon" #get_event(entities["day"],entities["time"],entities["place"])
-        elif intent == "gst-query":
-            response_text = gst_query(entities)
-        else:
-            get_random_response = lambda intent:random.choice(intent_response_dict[intent])
-            response_text = get_random_response(intent)
+        #print("response :\n",{"status":"success","response":response}) 
+        #response_text = json.dumps(response[0].get("text","Wait, what did you said?") )
+        response_text = json.dumps(response[0]["response"][0]["text"])
         return jsonify({"status":"success","response":response_text})
     except Exception as e:
-        print("HOUSTON ! WE GOT AN EXCETPITON !")
+        print("HOUSTON ! WE GOT AN EXCEPTION !")
         print(e)
         return jsonify({"status":"success","response":"Sorry I am not trained to do that yet..."})
 

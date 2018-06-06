@@ -1,0 +1,336 @@
+{
+  "rasa_nlu_data": {
+    "entity_synonyms": [],
+    "regex_features": [],
+    "common_examples": [
+      {
+        "text": "Hello",
+        "intent": "greet"
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye"
+      },
+      {
+        "intent": "inform",
+        "text": "What's the weather in Berlin at the moment?",
+        "entities": [
+          {
+            "end": 28,
+            "start": 22,
+            "value": "Berlin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "hey",
+        "intent": "greet"
+      },
+      {
+        "text": "hello",
+        "intent": "greet"
+      },
+      {
+        "text": "hi",
+        "intent": "greet"
+      },
+      {
+        "text": "heya",
+        "intent": "greet"
+      },
+      {
+        "text": "howdy",
+        "intent": "greet"
+      },
+      {
+        "text": "hey there",
+        "intent": "greet"
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "bye bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "see ya",
+        "intent": "goodbye"
+      },
+      {
+        "text": "see you later",
+        "intent": "goodbye"
+      },
+      {
+        "text": "What's the weather today?",
+        "intent": "inform"
+      },
+      {
+        "intent": "inform",
+        "text": "What's the weather in London today?",
+        "entities": [
+          {
+            "end": 28,
+            "start": 22,
+            "value": "London",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "Show me what's the weather in Paris",
+        "entities": [
+          {
+            "end": 35,
+            "start": 30,
+            "value": "Paris",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I wonder what is the weather in Vilnius right now?",
+        "entities": [
+          {
+            "end": 39,
+            "start": 32,
+            "value": "Vilnius",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "what is the weather?",
+        "intent": "inform"
+      },
+      {
+        "text": "Tell me the weather",
+        "intent": "inform"
+      },
+      {
+        "intent": "inform",
+        "text": "Is the weather nice in Barcelona today?",
+        "entities": [
+          {
+            "end": 32,
+            "start": 23,
+            "value": "Barcelona",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I am going to London today and I wonder what is the weather out there?",
+        "entities": [
+          {
+            "end": 20,
+            "start": 14,
+            "value": "London",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I am planning my trip to Amsterdam. What is the weather out there?",
+        "entities": [
+          {
+            "end": 34,
+            "start": 25,
+            "value": "Amsterdam",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "Show me the weather in Dublin, please",
+        "entities": [
+          {
+            "end": 29,
+            "start": 23,
+            "value": "Dublin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "in London",
+        "entities": [
+          {
+            "end": 9,
+            "start": 3,
+            "value": "London",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "Lithuania",
+        "entities": [
+          {
+            "end": 9,
+            "start": 0,
+            "value": "Lithuania",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "Oh, sorry, in Italy",
+        "entities": [
+          {
+            "end": 19,
+            "start": 14,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "Tell me the weather in Vilnius",
+        "entities": [
+          {
+            "end": 30,
+            "start": 23,
+            "value": "Vilnius",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "The weather condition in Italy",
+        "entities": [
+          {
+            "end": 30,
+            "start": 25,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I feel bad",
+        "entities": [
+          {
+            "end": 10,
+            "start": 7,
+            "value": "bad",
+            "entity": "mood"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I feel happy",
+        "entities": [
+          {
+            "end": 12,
+            "start": 7,
+            "value": "happy",
+            "entity": "mood"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I don't want to work today",
+        "entities": [
+          {
+            "end": 20,
+            "start": 2,
+            "value": "don't want to work",
+            "entity": "mood"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I will do my work today",
+        "entities": [
+          {
+            "end": 17,
+            "start": 0,
+            "value": "I will do my work",
+            "entity": "information"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "He cheated, it is awful",
+        "entities": [
+          {
+            "end": 10,
+            "start": 0,
+            "value": "He cheated",
+            "entity": "information"
+          },
+          {
+            "end": 23,
+            "start": 18,
+            "value": "awful",
+            "entity": "adjective"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I'm so sad today",
+        "entities": [
+          {
+            "end": 10,
+            "start": 7,
+            "value": "sad",
+            "entity": "mood"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "This work was horrible",
+        "entities": [
+          {
+            "end": 22,
+            "start": 14,
+            "value": "horrible",
+            "entity": "adjective"
+          }
+        ]
+      },
+      {
+        "intent": "inform",
+        "text": "I think I won't pass",
+        "entities": [
+          {
+            "end": 20,
+            "start": 8,
+            "value": "I won't pass",
+            "entity": "information"
+          },
+          {
+            "end": 20,
+            "start": 2,
+            "value": "think I won't pass",
+            "entity": "mood"
+          }
+        ]
+      }
+    ]
+  }
+}

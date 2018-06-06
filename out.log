@@ -1,0 +1,1241 @@
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Failed to load any agent model. Running Rasa Core server with out loaded model now. Failed to load model metadata from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/metadata.json'. [Errno 2] No such file or directory: '/home/mike/Programing/Rasa/myflaskapp/models/nlu/metadata.json'
+Started http server on port 5005
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Failed to load any agent model. Running Rasa Core server with out loaded model now. Failed to load model metadata from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/metadata.json'. [Errno 2] No such file or directory: '/home/mike/Programing/Rasa/myflaskapp/models/nlu/metadata.json'
+Started http server on port 5005
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Creating a new tracker for id 'default'.
+Received user message 'Hello' with intent '{'confidence': 0.726088304950494, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	mood: None
+	location: None
+	adjective: None
+	information: None
+Current tracker state [
+	None
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'I am sad' with intent '{'confidence': 0.9091038037055945, 'name': 'inform'}' and entities '[{'value': 'sad', 'confidence': 0.5274867092381141, 'extractor': 'ner_crf', 'end': 8, 'entity': 'mood', 'start': 5}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	mood: sad
+	location: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '9'
+Predicted next action 'utter_sadness' with prob 1.00.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Creating a new tracker for id 'default'.
+Received user message 'I am sad' with intent '{'name': 'inform', 'confidence': 0.9091038037055945}' and entities '[{'start': 5, 'entity': 'mood', 'value': 'sad', 'extractor': 'ner_crf', 'end': 8, 'confidence': 0.5274867092381141}]'
+Logged UserUtterance - tracker now has 3 events
+Current slot values: 
+	location: None
+	adjective: None
+	information: None
+	mood: sad
+Current tracker state [
+	None
+	None
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '9'
+Predicted next action 'utter_sadness' with prob 1.00.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	None
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Creating a new tracker for id 'nad'.
+Received user message 'Hello' with intent '{'confidence': 0.726088304950494, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	information: None
+	adjective: None
+	location: None
+	mood: None
+Current tracker state [
+	None
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'Hi''
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppenv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'query=Hello''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Creating a new tracker for id 'default'.
+Received user message 'Hello' with intent '{'confidence': 0.726088304950494, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	None
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 30 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 34 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 42 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 50 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 58 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 62 events
+Current slot values: 
+	location: None
+	mood: None
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'I am sad' with intent '{'confidence': 0.9091038037055945, 'name': 'inform'}' and entities '[{'end': 8, 'confidence': 0.5274867092381141, 'value': 'sad', 'entity': 'mood', 'start': 5, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 67 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '9'
+Predicted next action 'utter_sadness' with prob 1.00.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 71 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Failed to decode json during respond request. Error: Expecting value: line 1 column 1 (char 0). Request content: 'b'q=Hi''
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 75 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 79 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 83 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 87 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 91 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 95 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 99 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 103 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Ji' with intent '{'confidence': 0.4333533091240638, 'name': 'goodbye'}' and entities '[]'
+Logged UserUtterance - tracker now has 107 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_goodbye', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_goodbye' with prob 1.00.
+Bot utterance 'BotUttered(text: Talk to you later., data: null)'
+Action 'utter_goodbye' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_goodbye', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_goodbye', 1), ('slot_mood_0', 1), ('prev_utter_goodbye', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 111 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_goodbye', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_goodbye', 1), ('slot_mood_0', 1), ('prev_utter_goodbye', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_goodbye', 1), ('slot_mood_0', 1), ('prev_utter_goodbye', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'I'm sad' with intent '{'confidence': 0.8863508338804817, 'name': 'inform'}' and entities '[{'end': 7, 'confidence': 0.5274867092381141, 'value': 'sad', 'entity': 'mood', 'start': 4, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 116 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '9'
+Predicted next action 'utter_sadness' with prob 1.00.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 120 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 124 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 128 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 132 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 136 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hello' with intent '{'confidence': 0.726088304950494, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 140 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 144 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 148 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 152 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 156 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 160 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 164 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 168 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'I feel sad' with intent '{'confidence': 0.9055022047728047, 'name': 'inform'}' and entities '[{'end': 10, 'confidence': 0.654328979436446, 'value': 'sad', 'entity': 'mood', 'start': 7, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 173 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '9'
+Predicted next action 'utter_sadness' with prob 1.00.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 177 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'What is the weather?' with intent '{'confidence': 0.9246123468616637, 'name': 'inform'}' and entities '[]'
+Logged UserUtterance - tracker now has 181 events
+Current slot values: 
+	location: None
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_sadness' with prob 0.98.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_mood_0', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'In paris' with intent '{'confidence': 0.9472345281182835, 'name': 'inform'}' and entities '[{'end': 8, 'confidence': 0.9560669414156044, 'value': 'paris', 'entity': 'location', 'start': 3, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 186 events
+Current slot values: 
+	location: paris
+	mood: sad
+	adjective: None
+	information: None
+Current tracker state [
+	[('intent_inform', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'action_weather' with prob 0.99.
+Starting new HTTP connection (1): api.apixu.com
+http://api.apixu.com:80 "GET /v1/current.json?q=paris&key=a2a1f7505d534755929211912181705 HTTP/1.1" 200 385
+Bot utterance 'BotUttered(text: It is currently Partly cloudy in Paris at the moment. The temperature is 26.1 degrees, the humidity is 50% and the wind speed is 6.7 mph , data: null)'
+Action 'action_weather' ended with events '['SlotSet(key: location, value: paris)']'
+Current tracker state [
+	[('intent_inform', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_weather', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
