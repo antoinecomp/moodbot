@@ -291,8 +291,8 @@ def chat():
         response = requests.post('http://localhost:5005/conversations/default/respond', json={"query":user_message})
         response = response.json()
         #print("response :\n",{"status":"success","response":response}) 
-        #response_text = json.dumps(response[0].get("text","Wait, what did you said?") )
-        response_text = json.dumps(response[0]["response"][0]["text"])
+        response_text = json.dumps(response[0].get("text","Wait, what did you said?"))
+        #response_text = json.dumps(response[0]["text"])
         return jsonify({"status":"success","response":response_text})
     except Exception as e:
         print("HOUSTON ! WE GOT AN EXCEPTION !")
