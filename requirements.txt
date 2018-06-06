@@ -1,6 +1,6 @@
 absl-py==0.1.11
 alabaster==0.7.10
-apixu-client==0.0.1
+git+https://github.com/apixu/apixu-python.git
 APScheduler==3.5.1
 apturl==0.5.2
 astor==0.6.2
