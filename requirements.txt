@@ -21,7 +21,7 @@ chardet==2.3.0
 checkbox-support==0.22
 click==6.7
 cloudpickle==0.5.2
-c#oloredlogs==10.0
+coloredlogs==10.0
 command-not-found==0.3
 ConfigArgParse==0.13.0
 constantly==15.1.0
