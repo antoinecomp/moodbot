@@ -102,7 +102,7 @@ nltk==3.2.5
 notebook==5.4.0
 numpy==1.14.3
 oauthlib==1.0.3
-onboard==1.2.0
+#onboard==1.2.0
 openpyxl==2.5.3
 packaging==17.1
 padme==1.1.1
