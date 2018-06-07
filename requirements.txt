@@ -212,3 +212,4 @@ xkit==0.0.0
 xlrd==1.1.0
 XlsxWriter==0.7.3
 zope.interface==4.5.0
+git+https://github.com/requests/requests.git
