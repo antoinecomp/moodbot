@@ -81,7 +81,7 @@ jupyter-core==4.4.0
 Keras==2.1.5
 kiwisolver==1.0.1
 klein==17.10.0
-language-selector==0.1
+#language-selector==0.1
 louis==2.6.4
 lxml==3.5.0
 Mako==1.0.3
