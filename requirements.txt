@@ -126,7 +126,7 @@ pyasn1==0.1.9
 pycups==1.9.73
 pycurl==7.43.0
 Pygments==2.2.0
-pygobject==3.20.0
+#pygobject==3.20.0
 PyJWT==1.3.0
 pykwalify==1.6.0
 pyparsing==2.0.3
