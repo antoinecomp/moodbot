@@ -1668,3 +1668,221 @@ Current tracker state [
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
 Current topic: None
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. [Errno 2] No such file or directory: '/home/mike/.local/lib/python2.7/site-packages/spacy/data/en/vocab/strings.json'
+Started http server on port 5005
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. [Errno 2] No such file or directory: '/home/mike/.local/lib/python2.7/site-packages/spacy/data/en/vocab/strings.json'
+Started http server on port 5005
+/usr/local/lib/python3.5/dist-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. [Errno 2] No such file or directory: '/home/mike/.local/lib/python2.7/site-packages/spacy/data/en/vocab/strings.json'
+Started http server on port 5005
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. thinc.extra.search.MaxViolation has the wrong size, try recompiling
+Started http server on port 5005
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. thinc.extra.search.MaxViolation has the wrong size, try recompiling
+Started http server on port 5005
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. thinc.extra.search.MaxViolation has the wrong size, try recompiling
+Started http server on port 5005
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. [Errno 2] No such file or directory: '/home/mike/.local/lib/python2.7/site-packages/spacy/data/en/vocab/strings.json'
+Started http server on port 5005
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. Not all required packages are installed. To use this pipeline, you need to install the missing dependencies. Please install spacy
+Started http server on port 5005
+Failed to load any agent model. Running Rasa Core server with out loaded model now. No module named 'apixu'
+Started http server on port 5005
+Failed to load any agent model. Running Rasa Core server with out loaded model now. Not all required packages are installed. To use this pipeline, you need to install the missing dependencies. Please install spacy, sklearn_crfsuite
+Started http server on port 5005
+Failed to load any agent model. Running Rasa Core server with out loaded model now. [E050] Can't find model 'en'. It doesn't seem to be a shortcut link, a Python package or a valid path to a data directory.
+Started http server on port 5005
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/myFlaskAppEnv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Creating a new tracker for id 'default'.
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.8505827581290721}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	adjective: None
+	information: None
+	mood: None
+	location: None
+Current tracker state [
+	None
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.8505827581290721}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	adjective: None
+	information: None
+	mood: None
+	location: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'What is the weather tomorrow' with intent '{'name': 'inform', 'confidence': 0.9161908706851556}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	adjective: None
+	information: None
+	mood: None
+	location: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_sadness' with prob 0.93.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('prev_utter_sadness', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'What is he weather in Seoul?' with intent '{'name': 'inform', 'confidence': 0.9300349623308606}' and entities '[{'value': 'seoul', 'end': 27, 'start': 22, 'entity': 'location', 'extractor': 'ner_crf', 'confidence': 0.8093866880867061}]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	adjective: None
+	information: None
+	mood: None
+	location: seoul
+Current tracker state [
+	[('intent_inform', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'action_weather' with prob 0.99.
+Starting new HTTP connection (1): api.apixu.com
+http://api.apixu.com:80 "GET /v1/current.json?q=seoul&key=a2a1f7505d534755929211912181705 HTTP/1.1" 200 378
+Bot utterance 'BotUttered(text: It is currently Partly cloudy in Seoul at the moment. The temperature is 21.2 degrees, the humidity is 72% and the wind speed is 2.0 mph , data: null)'
+Action 'action_weather' ended with events '['SlotSet(key: location, value: seoul)']'
+Current tracker state [
+	[('intent_inform', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_weather', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'I'm sad' with intent '{'name': 'inform', 'confidence': 0.8863508338804817}' and entities '[{'value': 'sad', 'end': 7, 'start': 4, 'entity': 'mood', 'extractor': 'ner_crf', 'confidence': 0.5274867092381141}]'
+Logged UserUtterance - tracker now has 21 events
+Current slot values: 
+	adjective: None
+	information: None
+	mood: sad
+	location: seoul
+Current tracker state [
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_weather', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Used memorised next action '9'
+Predicted next action 'utter_sadness' with prob 1.00.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_weather', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'I'm happy' with intent '{'name': 'inform', 'confidence': 0.8720927782413196}' and entities '[{'value': 'happy', 'end': 9, 'start': 4, 'entity': 'mood', 'extractor': 'ner_crf', 'confidence': 0.3873906066167893}]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+	adjective: None
+	information: None
+	mood: happy
+	location: seoul
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_sadness' with prob 1.00.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_mood', 1), ('slot_location_0', 1), ('slot_mood_0', 1), ('prev_utter_sadness', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
