@@ -1,3 +1,4 @@
+gunicorn==19.0.0
 absl-py==0.1.11
 alabaster==0.7.10
 git+https://github.com/apixu/apixu-python.git
@@ -211,3 +212,4 @@ xkit==0.0.0
 xlrd==1.1.0
 XlsxWriter==0.7.3
 zope.interface==4.5.0
+git+https://github.com/requests/requests.git
