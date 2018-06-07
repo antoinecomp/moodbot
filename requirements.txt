@@ -132,7 +132,7 @@ pykwalify==1.6.0
 pyparsing==2.0.3
 #python-apt==1.1.0b1
 python-dateutil==2.6.1
-python-debian==0.1.27
+#python-debian==0.1.27
 python-systemd==231
 python-telegram-bot==10.1.0
 pytz==2017.3
