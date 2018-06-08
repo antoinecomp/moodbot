@@ -57,7 +57,7 @@
     </a>
     <span> | </span>-->
     <a href="https://www.reddit.com/r/Moodbot/">
-      Reddit
+      Come discuss with us @Reddit
     </a>
 	<!--
     <span> | </span>
