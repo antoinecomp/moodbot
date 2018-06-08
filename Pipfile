@@ -3,10 +3,3 @@ url = "https://moodbotbot.herokuapp.com/"
 
 [packages]
 gunicorn = "*"
-psycopg2 = "*"
-Flask= "*"
-Flask-MySQLdb= "*"
-rasa-core = "*"
-rasa-nlu = "*"
-rasa-core = "*"
-rasa-nlu = "*"
