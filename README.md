@@ -1,4 +1,4 @@
-<h1 align="center">myflaskapp - Moodbot App</h1> 
+<h1 align="center">Moodbot</h1> 
 <div align="center">
   <strong>Simple mood recognition chatbot application with authentication, and articles.</strong>
 </div>
@@ -33,9 +33,9 @@
 </div>
 
 
-This Queen Mary University of London is a bot application for personal goals/motivation support. So far it is a rules-based platform recognizing up to seven emotions.
+This project from Queen Mary University of London is a bot application for personal goals/motivation support. So far it is a rules-based platform recognizing up to seven emotions.
 
-Tehcnically it is a locally designed flask application that has a Client, which is a Simple UI chat interface, and ServerCLI backend that fetches users and chat understanding details with Rasa, an open source NLU tool.
+Technically it is a locally designed flask application that has a Client, which is a Simple UI chat interface, and ServerCLI backend that fetches users and chat understanding details with Rasa, an open source NLU tool.
 
 ## Installation
 
@@ -51,22 +51,24 @@ In app.py
  - MySQL credentials 
  - app secret key in the main
 
-You may be able to ask the weather to the bot ! You must first create you own credentials on apxi.com
-
+You may be able to ask the weather to the bot ! For that you must first create you own credentials on [apixu.com](https://www.apixu.com/).
 
 
 ## Running the app
 
-Run in two terminals
- - `python app.py` which launch the front-end
- - `python -m rasa_core.server -d myflaskapp/models/dialogue/ -u myflaskapp/models/nlu/default/moodnlu/ --debug -o out.log --cors *` which lReporting Issuesaunch the rasa-core server.
+If you fancy to test it locally designed application you have to run both the client and the server.
+You may run in two terminals
+ - `python app.py` which launch the client.
+ - `python -m rasa_core.server -d myflaskapp/models/dialogue/ -u myflaskapp/models/nlu/default/moodnlu/ --debug -o out.log --cors *` which launch the server.
 
 # Contribution
 
-We are happy to let you join the team. We would like to 
+We are happy to let you join the team. We would like to :
 
  - have more data in data/data.json enabling the bot to have more understanding, stories in data/stories.md for better answers and a more answers in the domain.yml.
  - enable people to talk to each other and store their anonymous data which could then be used for ML NLU for furthering the dialog agent.
+
+Do not hesitate to fork the project.
 
 # Reporting Issues
 
