@@ -1,5 +1,4 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, request, logging, jsonify
-#from data import Articles
 from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
@@ -12,7 +11,7 @@ import random
 
 app = Flask(__name__)
 
-# Config MySQL
+# Config MySQL, must be changed
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'root'
@@ -284,21 +283,20 @@ def delete_article(id):
 
     return redirect(url_for('dashboard'))
 
+# chat get/post methods
 @app.route('/chat',methods=["POST"])
 def chat():
     try:
         user_message = request.values.get("text")
         response = requests.post('http://localhost:5005/conversations/default/respond', json={"query":user_message})
         response = response.json()
-        #print("response :\n",{"status":"success","response":response}) 
         response_text = json.dumps(response[0].get("text","Wait, what did you said?"))
-        #response_text = json.dumps(response[0]["text"])
         return jsonify({"status":"success","response":response_text})
     except Exception as e:
-        print("HOUSTON ! WE GOT AN EXCEPTION !")
         print(e)
         return jsonify({"status":"success","response":"Sorry I am not trained to do that yet..."})
 
 if __name__ == '__main__':
+	# must be changed
     app.secret_key='secret123'
     app.run(port=8000,debug=True)
