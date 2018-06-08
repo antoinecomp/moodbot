@@ -73,13 +73,15 @@ This project from Queen Mary University of London is a bot application for perso
 
 Technically it is a locally designed flask application that has a Client, which is a Simple UI chat interface, and ServerCLI backend that fetches users and chat understanding details with Rasa, an open source NLU tool.
 
-[![chatbot photo is comming back soon!](https://pasteboard.co/Hp0iG9F.png)]
+[![chatbot photo is comming back soon!](https://pasteboard.co/Hp0pSMi.png)](https://pasteboard.co/Hp0pSMi.png)
 
 <h2> Installation </h2>
 
 <h3> Requirements</h3>
 
-`pip install -r requirements.txt` The above command may fail for few packages like spacy. So you have to install the following pip install spacy and those which might lack
+`pip install -r requirements.txt` The above command may fail for few packages like spacy. So you have to install the following pip install spacy and those which might lack.
+
+ - for the weather you might need `pip install git+https://github.com/apixu/apixu-python.git`
 
 <h3> Settings to change</h3>
 
