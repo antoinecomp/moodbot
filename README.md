@@ -70,7 +70,7 @@ We are happy to let you join the team. We would like to :
 
 Do not hesitate to fork the project.
 
-# Reporting Issues
+#Reporting Issues
 
 We love feedback from our former padawans, feel free to raise an issue for any problem.
 
