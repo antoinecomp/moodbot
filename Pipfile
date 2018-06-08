@@ -2,4 +2,4 @@
 url = "https://pypi.python.org/simple"
 
 [packages]
-requests = "*"
+requests = { extras = ['socks'] }
