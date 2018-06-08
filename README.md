@@ -103,14 +103,16 @@ You may run in two terminals
 
 <h2> Contribution </h2>
 
-We are happy to let you join the team. We would like to :
+We will be happy to let you join the team! We would like to :
 
- - have more data in data/data.json enabling the bot to have more understanding, stories in data/stories.md for better answers and a more answers in the domain.yml.
- - enable people to talk to each other and store their anonymous data which could then be used for ML NLU for furthering the dialog agent.
+ - have more data in data/data.json. Indeed, the more data you have here, the more the bot will be able to understand.
+ - have more stories in data/stories.md for better answers.
+ - have more mood, actions and templates in the domain.yml.
+ - enable people to talk to each other and store their conversation as anonymous data which could then be used for ML NLU for furthering the dialog agent. Today this is provided by the article systems, which isn't the best way to do chat.
 
 Do not hesitate to fork the project.
 
 <h2> Reporting Issues</h2>
 
-We love feedback from our former padawans, feel free to raise an issue for any problem.
+We love feedback from our former padawans, feel free to raise an issue for any problem. 
 
