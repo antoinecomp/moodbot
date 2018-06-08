@@ -41,7 +41,5 @@ pypandoc
 slackclient
 rasa_core
 git+https://github.com/apixu/apixu-python.git
-flask
 render_template
 jsonify
-request
