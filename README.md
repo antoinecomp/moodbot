@@ -73,9 +73,9 @@ This project from Queen Mary University of London is a bot application for perso
 
 Technically it is a locally designed flask application that has a Client, which is a Simple UI chat interface, and ServerCLI backend that fetches users and chat understanding details with Rasa, an open source NLU tool.
 
-![chatbot photo is comming back soon!](http://www.imagebam.com/image/14af35889991924)
+![chatbot photo is comming back soon!](https://ibb.co/iaevHo)
 
-<a href="http://www.imagebam.com/image/14af35889991924" target="_blank"><img src="http://thumbs2.imagebam.com/92/bd/98/14af35889991924.jpg" alt="chatbot photo is comming back soon!"></a> 
+<a align="center" href="https://ibb.co/iaevHo" target="_blank"><img src="https://ibb.co/iaevHo" alt="chatbot photo is comming back soon!"></a> 
 
 <h2> Installation </h2>
 
