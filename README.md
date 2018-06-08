@@ -56,8 +56,9 @@
       Contributing
     </a>
     <span> | </span>-->
+	Come discuss with us 
     <a href="https://www.reddit.com/r/Moodbot/">
-      Come discuss with us @Reddit
+      @Reddit
     </a>
 	<!--
     <span> | </span>
@@ -72,13 +73,15 @@ This project from Queen Mary University of London is a bot application for perso
 
 Technically it is a locally designed flask application that has a Client, which is a Simple UI chat interface, and ServerCLI backend that fetches users and chat understanding details with Rasa, an open source NLU tool.
 
-## Installation
+![chatbot photo is comming back soon!](https://pasteboard.co/Hp0iG9F.png)
 
-### Requirements
+<h2> Installation </h2>
+
+<h3> Requirements</h3>
 
 `pip install -r requirements.txt` The above command may fail for few packages like spacy. So you have to install the following pip install spacy and those which might lack
 
-### Settings to change
+<h3> Settings to change</h3>
 
 This is a locally designed chatbot, you will probably have to change the credentials.
 
@@ -89,14 +92,14 @@ In app.py
 You may be able to ask the weather to the bot ! For that you must first create you own credentials on [apixu.com](https://www.apixu.com/).
 
 
-## Running the app
+<h2> Running the app </h2>
 
 If you fancy to test it locally designed application you have to run both the client and the server.
 You may run in two terminals
  - `python app.py` which launch the client.
  - `python -m rasa_core.server -d myflaskapp/models/dialogue/ -u myflaskapp/models/nlu/default/moodnlu/ --debug -o out.log --cors *` which launch the server.
 
-# Contribution
+<h2> Contribution </h2>
 
 We are happy to let you join the team. We would like to :
 
@@ -105,7 +108,7 @@ We are happy to let you join the team. We would like to :
 
 Do not hesitate to fork the project.
 
-#Reporting Issues
+<h2> Reporting Issues</h2>
 
 We love feedback from our former padawans, feel free to raise an issue for any problem.
 
