@@ -2,4 +2,4 @@
 url = "https://moodbotbot.herokuapp.com/"
 
 [packages]
-gunicorn = "*"
+requests = "*"
