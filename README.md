@@ -75,8 +75,6 @@ Technically it is a locally designed flask application that has a Client, which 
 
 ![chatbot photo is comming back soon!](https://i.stack.imgur.com/sAtgy.png)
 
-<a align="center" href="https://i.stack.imgur.com/sAtgy.png" target="_blank"><img src="https://i.stack.imgur.com/sAtgy.png" alt="chatbot photo is comming back soon!"></a> 
-
 <h2> Installation </h2>
 
 <h3> Requirements</h3>
