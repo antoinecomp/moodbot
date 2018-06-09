@@ -1896,3 +1896,56 @@ Failed to load any agent model. Running Rasa Core server with out loaded model n
 Started http server on port 5005
 Failed to load any agent model. Running Rasa Core server with out loaded model now. No module named 'apixu'
 Started http server on port 5005
+Failed to load any agent model. Running Rasa Core server with out loaded model now. No module named 'apixu'
+Started http server on port 5005
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/MyFlaskAppEnv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Creating a new tracker for id 'default'.
+Received user message 'Hi' with intent '{'confidence': 0.8505827581290721, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	information: None
+	location: None
+	mood: None
+	adjective: None
+Current tracker state [
+	None
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'It's so hard to develop a chatbot!' with intent '{'confidence': 0.8764143927528946, 'name': 'inform'}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	information: None
+	location: None
+	mood: None
+	adjective: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_sadness' with prob 0.93.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('prev_utter_sadness', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
