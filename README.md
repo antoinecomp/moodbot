@@ -79,7 +79,7 @@ Technically it is a locally designed flask application that has a Client, which 
 
 <h3> Requirements</h3>
 
-`pip install -r requirements.txt` The above command may fail for few packages like spacy. So you have to install the following pip install spacy and those which might lack.
+`pip install -r requirements.txt` command may fail for few packages like spacy. So you have to install the following pip install spacy and those which might lack.
 
  - rasa-nlu, please follow the [official documentation](https://nlu.rasa.com/tutorial.html)
  - rasa_core `pip install rasa-core==0.9.0a3`
