@@ -71,7 +71,7 @@
 
 This project from Queen Mary University of London is a bot application for personal goals/motivation support. So far it is a rule-based platform recognizing up to seven emotions.
 
-Technically it is a locally designed flask application that has a Client, which is a Simple UI chat interface, and ServerCLI backend that fetches users and chat understanding details with Rasa, an open source NLU tool.
+Technically it is a locally designed flask application that has a Client, which is a simple UI chat interface, and a server CLI backend that fetches users conversations and understands details and answer with Rasa, an open source NLU tool.
 
 ![chatbot photo is comming back soon!](https://i.stack.imgur.com/sAtgy.png)
 
