@@ -81,6 +81,8 @@ Technically it is a locally designed flask application that has a Client, which 
 
 `pip install -r requirements.txt` The above command may fail for few packages like spacy. So you have to install the following pip install spacy and those which might lack.
 
+ - rasa-nlu
+ - rasa_core `pip install rasa-core==0.9.0a3`
  - for the weather you might need `pip install git+https://github.com/apixu/apixu-python.git`
 
 <h3> Settings to change</h3>
