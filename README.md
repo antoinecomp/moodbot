@@ -99,11 +99,8 @@ You may be able to ask the weather to the bot ! For that you must first create y
 <h2> Running the app </h2>
 
 Don't forget to build your model first with `python train_init.py`.
-
-<h3>Run the app locally</h3>
-
-If you fancy to test it locally you have to run both the client and the server.
-You may run in two terminals in your project directory :
+You have to run both the client and the server.
+You may then run in two terminals in your project directory the following command :
 
  - `python app.py` which launch the client.
  - `python -m rasa_core.server -d models/dialogue/ -u models/nlu/default/moodnlu/ --debug -o out.log --cors *` which launch the server.
