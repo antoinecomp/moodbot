@@ -69,7 +69,7 @@
 </div>
 
 
-This project from Queen Mary University of London is a bot application for personal goals/motivation support. So far it is a rules-based platform recognizing up to seven emotions.
+This project from Queen Mary University of London is a bot application for personal goals/motivation support. So far it is a rule-based platform recognizing up to seven emotions.
 
 Technically it is a locally designed flask application that has a Client, which is a Simple UI chat interface, and ServerCLI backend that fetches users and chat understanding details with Rasa, an open source NLU tool.
 
@@ -81,7 +81,7 @@ Technically it is a locally designed flask application that has a Client, which 
 
 `pip install -r requirements.txt` The above command may fail for few packages like spacy. So you have to install the following pip install spacy and those which might lack.
 
- - rasa-nlu
+ - rasa-nlu, please follow the [official documentation](https://nlu.rasa.com/tutorial.html)
  - rasa_core `pip install rasa-core==0.9.0a3`
  - for the weather you might need `pip install git+https://github.com/apixu/apixu-python.git`
 
@@ -98,10 +98,29 @@ You may be able to ask the weather to the bot ! For that you must first create y
 
 <h2> Running the app </h2>
 
-If you fancy to test it locally designed application you have to run both the client and the server.
-You may run in two terminals
+Don't forget to build your model first with `python train_init.py`.
+
+<h3>Run the app locally</h3>
+
+If you fancy to test it locally you have to run both the client and the server.
+You may run in two terminals in your project directory :
+
  - `python app.py` which launch the client.
- - `python -m rasa_core.server -d myflaskapp/models/dialogue/ -u myflaskapp/models/nlu/default/moodnlu/ --debug -o out.log --cors *` which launch the server.
+ - `python -m rasa_core.server -d models/dialogue/ -u models/nlu/default/moodnlu/ --debug -o out.log --cors *` which launch the server.
+
+<h2> Modifying the NLU model </h2>
+
+This chatbot is a totally open-source project, you are free to modify it in every way
+
+<h3>Modifying the domain</h3>
+
+The domain specifies the universe in which the bot's policy acts.
+A Domain subclass provides the actions the bot can take, the intents and entities it can recognise
+
+<h3>Create more stories</h3>
+
+If the model is done you may want to add more stories. In order to do that you may run `python train_online.py`
+You will be able to stack new stories to the old ones but pay attention to where you save it !
 
 <h2> Contribution </h2>
 
