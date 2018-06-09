@@ -85,7 +85,7 @@ Technically it is a locally designed flask application that has a Client, which 
  - rasa_core `pip install rasa-core==0.9.0a3`
  - for the weather you might need `pip install git+https://github.com/apixu/apixu-python.git`
 
-You then have to create the database `myflaskapp` using MySQL.
+You then have to create the database `myflaskapp` using MySQL. It will contains users and conversations.
 
 ```SQL
 CREATE DATABASE myflaskapp;
@@ -93,9 +93,6 @@ USE myflaskapp;
 CREATE TABLE users(id INT(11) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), username VARCHAR(100), password VARCHAR(100), register_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 CREATE TABLE conversations(id INT(11) AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255), author VARCHAR(100), body TEXT, create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 ```
-
-It will contains users and conversations.
-More information will be provided soon
 
 <h3> Settings to change</h3>
 
