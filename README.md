@@ -114,10 +114,18 @@ This chatbot is a totally open-source project, you are free to modify it in ever
 The domain specifies the universe in which the bot's policy acts.
 A Domain subclass provides the actions the bot can take, the intents and entities it can recognise
 
-<h3>Create more stories</h3>
+<h3>Create more stories for better answers</h3>
 
-If the model is done you may want to add more stories. In order to do that you may run `python train_online.py`
+If the model is done you may want to add more stories in order to have better actions from the bot. In order to do that you may run `python train_online.py`.
 You will be able to stack new stories to the old ones but pay attention to where you save it !
+
+<h3>Create more data for better understanding </h3>
+
+The training data is essential to develop chatbots. It should include texts to be interpreted and the structured data (intent/entities) we expect chatbots to convert the texts into. The best way to get training texts is from real users, and the best way to get the structured data is to pretend to be the bot yourself. There is already some data saved in `data/data.json`.
+
+For data visualization it you shall use the open source rasa-nlu-trainer on Chrome.
+You may download it with node packet manager with `npm i -g rasa-nlu-trainer`.
+To use it just launch `rasa-nlu-trainer`.
 
 <h2> Contribution </h2>
 
@@ -126,9 +134,9 @@ We will be happy to let you join the team! We would like to :
  - have more data in data/data.json. Indeed, the more data you have here, the more the bot will be able to understand.
  - have more stories in data/stories.md for better answers.
  - have more mood, actions and templates in the domain.yml.
- - enable people to talk to each other and store their conversation as anonymous data which could then be used for ML NLU for furthering the dialog agent. Today this is provided by the article systems, which isn't the best way to do chat.
+ - enable people to talk to each other and store their conversation as anonymous data which could then be used for ML NLU for furthering the dialog agent. Today this is provided by the article systems, which isn't the best way to chat.
 
-Do not hesitate to fork the project.
+Do not hesitate to fork the project !
 
 <h2> Reporting Issues</h2>
 
