@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Conversations</h1>
+  <ul class="list-group">
+    {% for conversation in conversations %}
+      <li class="list-group-item"><a href="article/{{article.id}}">{{conversation.title}}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

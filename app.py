@@ -40,7 +40,7 @@ def bot():
 
 
 # Articles
-@app.route('/articles')
+@app.route('/conversations')
 def articles():
     # Create cursor
     cur = mysql.connection.cursor()
@@ -53,14 +53,14 @@ def articles():
     if result > 0:
         return render_template('articles.html', articles=articles)
     else:
-        msg = 'No Articles Found'
-        return render_template('articles.html', msg=msg)
+        msg = 'No Conversations Found'
+        return render_template('conversations.html', msg=msg)
     # Close connection
     cur.close()
 
 
 #Single Article
-@app.route('/article/<string:id>/')
+@app.route('/conversations/<string:id>/')
 def article(id):
     # Create cursor
     cur = mysql.connection.cursor()
@@ -70,7 +70,7 @@ def article(id):
 
     article = cur.fetchone()
 
-    return render_template('article.html', article=article)
+    return render_template('conversation.html', article=article)
 
 
 # Register Form Class
@@ -196,7 +196,7 @@ class ArticleForm(Form):
     body = TextAreaField('Body', [validators.Length(min=30)])
 
 # Add Article
-@app.route('/add_article', methods=['GET', 'POST'])
+@app.route('/add_conversation', methods=['GET', 'POST'])
 @is_logged_in
 def add_article():
     form = ArticleForm(request.form)
@@ -208,7 +208,7 @@ def add_article():
         cur = mysql.connection.cursor()
 
         # Execute
-        cur.execute("INSERT INTO articles(title, body, author) VALUES(%s, %s, %s)",(title, body, session['username']))
+        cur.execute("INSERT INTO conversations(title, body, author) VALUES(%s, %s, %s)",(title, body, session['username']))
 
         # Commit to DB
         mysql.connection.commit()
@@ -220,18 +220,18 @@ def add_article():
 
         return redirect(url_for('dashboard'))
 
-    return render_template('add_article.html', form=form)
+    return render_template('add_conversation.html', form=form)
 
 
 # Edit Article
-@app.route('/edit_article/<string:id>', methods=['GET', 'POST'])
+@app.route('/edit_conversation/<string:id>', methods=['GET', 'POST'])
 @is_logged_in
 def edit_article(id):
     # Create cursor
     cur = mysql.connection.cursor()
 
     # Get article by id
-    result = cur.execute("SELECT * FROM articles WHERE id = %s", [id])
+    result = cur.execute("SELECT * FROM conversations WHERE id = %s", [id])
 
     article = cur.fetchone()
     cur.close()
@@ -250,7 +250,7 @@ def edit_article(id):
         cur = mysql.connection.cursor()
         app.logger.info(title)
         # Execute
-        cur.execute ("UPDATE articles SET title=%s, body=%s WHERE id=%s",(title, body, id))
+        cur.execute ("UPDATE conversations SET title=%s, body=%s WHERE id=%s",(title, body, id))
         # Commit to DB
         mysql.connection.commit()
 
@@ -264,14 +264,14 @@ def edit_article(id):
     return render_template('edit_article.html', form=form)
 
 # Delete Article
-@app.route('/delete_article/<string:id>', methods=['POST'])
+@app.route('/delete_conversation/<string:id>', methods=['POST'])
 @is_logged_in
 def delete_article(id):
     # Create cursor
     cur = mysql.connection.cursor()
 
     # Execute
-    cur.execute("DELETE FROM articles WHERE id = %s", [id])
+    cur.execute("DELETE FROM conversations WHERE id = %s", [id])
 
     # Commit to DB
     mysql.connection.commit()
@@ -279,7 +279,7 @@ def delete_article(id):
     #Close connection
     cur.close()
 
-    flash('Article Deleted', 'success')
+    flash('Conversation Deleted', 'success')
 
     return redirect(url_for('dashboard'))
 
