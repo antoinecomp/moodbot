@@ -29,7 +29,7 @@ class ActionWeather(Action):
 		humidity = current['current']['humidity']
 		wind_mph = current['current']['wind_mph']
 
-		response = """It is currently {} in {} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph """.format(condition, city,temperature_c, humidity,wind_mph)
+		response = """It is currently {} in {} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph """.format(condition, city, temperature_c, humidity,wind_mph)
 
 		dispatcher.utter_message(response)
 		return[SlotSet('location',loc)]

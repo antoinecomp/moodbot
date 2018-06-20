@@ -1,0 +1,18 @@
+I have a client/server app. I have managed to create a script that launch the client side easily, which you can find here. Yet I still launch the server from the command line with the ugly 
+
+(MyFlaskAppEnv) mike@mike-thinks:~/Programing/Rasa/myflaskapp$ python -m rasa_core.server -d /home/mike/Programing/Rasa/myflaskapp/models/dialogue/ -u /home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/ --debug -o out.log --cors *
+
+Do you know how can I create a Python file so I can launch the server without worrying about forgetting the command?
+
+I'm thinking about:
+
+from rasa_core.agent import Agent
+
+def run_sever(nlu_path, model_path):
+    return agent
+
+if __name__ == '__main__':
+    nlu_path = './models/nlu/default/moodnlu/'
+	model_path = './models/dialogue'
+    run_server(nlu_path, model_path)
+

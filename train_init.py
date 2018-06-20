@@ -24,4 +24,4 @@ if __name__ == '__main__':
 			batch_size = 10,
 			validation_split = 0.2)
 			
-agent.persist(model_path)
+	agent.persist(model_path)

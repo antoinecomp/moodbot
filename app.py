@@ -178,7 +178,7 @@ def dashboard():
     cur = mysql.connection.cursor()
 
     # Get articles
-    result = cur.execute("SELECT * FROM articles")
+    result = cur.execute("SELECT * FROM conversations")
 
     articles = cur.fetchall()
 
@@ -195,7 +195,7 @@ class ArticleForm(Form):
     title = StringField('Title', [validators.Length(min=1, max=200)])
     body = TextAreaField('Body', [validators.Length(min=30)])
 
-# Add Article
+# Add Conversation
 @app.route('/add_conversation', methods=['GET', 'POST'])
 @is_logged_in
 def add_article():
@@ -216,7 +216,7 @@ def add_article():
         #Close connection
         cur.close()
 
-        flash('Article Created', 'success')
+        flash('Conversation Created', 'success')
 
         return redirect(url_for('dashboard'))
 

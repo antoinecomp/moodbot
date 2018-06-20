@@ -2026,3 +2026,132 @@ Current tracker state [
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
 Current topic: None
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1305: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/mike/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Failed to load any agent model. Running Rasa Core server with out loaded model now. Not all required packages are installed. To use this pipeline, you need to install the missing dependencies. Please install spacy
+Started http server on port 5005
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/home/mike/Programing/Rasa/myflaskapp/MyFlaskAppEnv/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from '/home/mike/Programing/Rasa/myflaskapp/models/nlu/default/moodnlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Creating a new tracker for id 'default'.
+Received user message 'Hi' with intent '{'name': 'greet', 'confidence': 0.8505827581290721}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	mood: None
+	location: None
+	information: None
+	adjective: None
+Current tracker state [
+	None
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]]
+Used memorised next action '2'
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	None
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]]
+Used memorised next action '0'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'What's the weather?' with intent '{'name': 'inform', 'confidence': 0.9217470039129624}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	mood: None
+	location: None
+	information: None
+	adjective: None
+Current tracker state [
+	[('intent_greet', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_sadness' with prob 0.93.
+Bot utterance 'BotUttered(text: be a tough guy, data: null)'
+Action 'utter_sadness' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('prev_utter_greet', 1)]
+	[('intent_inform', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('prev_utter_sadness', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'What's the weather in London?' with intent '{'name': 'inform', 'confidence': 0.9393913179921098}' and entities '[{'value': 'london', 'start': 22, 'entity': 'location', 'end': 28, 'confidence': 0.8082396265672867, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	mood: None
+	location: london
+	information: None
+	adjective: None
+Current tracker state [
+	[('intent_inform', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'action_weather' with prob 0.99.
+Starting new HTTP connection (1): api.apixu.com
+http://api.apixu.com:80 "GET /v1/current.json?q=london&key=a2a1f7505d534755929211912181705 HTTP/1.1" 200 399
+Bot utterance 'BotUttered(text: It is currently Overcast in London at the moment. The temperature is 20.0 degrees, the humidity is 68% and the wind speed is 12.5 mph , data: null)'
+Action 'action_weather' ended with events '['SlotSet(key: location, value: london)']'
+Current tracker state [
+	[('intent_inform', 1), ('prev_utter_sadness', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_weather', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Thanks' with intent '{'name': 'greet', 'confidence': 0.3854140924106424}' and entities '[]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	mood: None
+	location: london
+	information: None
+	adjective: None
+Current tracker state [
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_weather', 1)]
+	[('intent_greet', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hello! How can I help?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [
+	[('intent_inform', 1), ('entity_location', 1), ('slot_location_0', 1), ('prev_action_weather', 1)]
+	[('intent_greet', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_location_0', 1), ('prev_utter_greet', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+Received user message 'Bye' with intent '{'name': 'goodbye', 'confidence': 0.8446516587461707}' and entities '[]'
+Logged UserUtterance - tracker now has 20 events
+Current slot values: 
+	mood: None
+	location: london
+	information: None
+	adjective: None
+Current tracker state [
+	[('intent_greet', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]
+	[('intent_greet', 1), ('slot_location_0', 1), ('prev_utter_greet', 1)]
+	[('intent_goodbye', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]]
+Predicted next action 'utter_goodbye' with prob 1.00.
+Bot utterance 'BotUttered(text: Talk to you later., data: null)'
+Action 'utter_goodbye' ended with events '[]'
+Current tracker state [
+	[('intent_greet', 1), ('slot_location_0', 1), ('prev_utter_greet', 1)]
+	[('intent_goodbye', 1), ('slot_location_0', 1), ('prev_action_listen', 1)]
+	[('intent_goodbye', 1), ('slot_location_0', 1), ('prev_utter_goodbye', 1)]]
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Failed to load any agent model. Running Rasa Core server with out loaded model now. No module named 'apixu'
+Started http server on port 5005

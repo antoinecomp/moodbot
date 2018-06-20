@@ -1,0 +1,91 @@
+I have a one to many conversation system on the website I developped, like in forum styled website and I would like to change this system to another where user would only be able to contact the administrators. You may find the whole project on GitHub.
+At the moment :
+ - I have a register system but every account are the same, there is no privilege.
+ - conversations are added to the MySQL table `conversations` added with title, body and author.
+ - the dashboard displays all conversations.
+
+Therefore, how should I design my website again so that this one user to administrator system exist?
+I know I have to change the dashboard so that the users now only see their own messages and maybe add a new one for the administrators so that they can answer the message one user may send them. Therefore I think I might have to change the route system in app.py.
+
+Very few users would be administrators, thus picking them from users from the backend would be solution I would admit.
+
+Here is the register route:
+
+# User Register
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegisterForm(request.form)
+    if request.method == 'POST' and form.validate():
+        name = form.name.data
+        email = form.email.data
+        username = form.username.data
+        password = sha256_crypt.encrypt(str(form.password.data))
+
+        # Create cursor
+        cur = mysql.connection.cursor()
+
+        # Execute query
+        cur.execute("INSERT INTO users(name, email, username, password) VALUES(%s, %s, %s, %s)", (name, email, username, password))
+
+        # Commit to DB
+        mysql.connection.commit()
+
+        # Close connection
+        cur.close()
+
+        flash('You are now registered and can log in', 'success')
+
+        return redirect(url_for('login'))
+    return render_template('register.html', form=form)
+
+Here is the dashboard:
+
+# Dashboard
+@app.route('/dashboard')
+@is_logged_in
+def dashboard():
+    # Create cursor
+    cur = mysql.connection.cursor()
+
+    # Get articles
+    result = cur.execute("SELECT * FROM conversations")
+
+    articles = cur.fetchall()
+
+    if result > 0:
+        return render_template('dashboard.html', articles=articles)
+    else:
+        msg = 'No Articles Found'
+        return render_template('dashboard.html', msg=msg)
+    # Close connection
+    cur.close()
+
+And finally the route used to add conversations:
+
+# Add Conversations
+@app.route('/add_conversation', methods=['GET', 'POST'])
+@is_logged_in
+def add_article():
+    form = ArticleForm(request.form)
+    if request.method == 'POST' and form.validate():
+        title = form.title.data
+        body = form.body.data
+
+        # Create Cursor
+        cur = mysql.connection.cursor()
+
+        # Execute
+        cur.execute("INSERT INTO conversations(title, body, author) VALUES(%s, %s, %s)",(title, body, session['username']))
+
+        # Commit to DB
+        mysql.connection.commit()
+
+        #Close connection
+        cur.close()
+
+        flash('Conversation Created', 'success')
+
+        return redirect(url_for('dashboard'))
+
+    return render_template('add_conversation.html', form=form)
+
