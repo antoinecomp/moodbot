@@ -42,3 +42,4 @@ slackclient
 rasa_core
 git+https://github.com/apixu/apixu-python.git
 jsonify
+flask_mysqldb
