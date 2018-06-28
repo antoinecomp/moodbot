@@ -2155,3 +2155,5 @@ Action 'action_listen' ended with events '[]'
 Current topic: None
 Failed to load any agent model. Running Rasa Core server with out loaded model now. No module named 'apixu'
 Started http server on port 5005
+Failed to load any agent model. Running Rasa Core server with out loaded model now. No module named 'apixu'
+Started http server on port 5005
