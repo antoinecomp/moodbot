@@ -73,7 +73,7 @@ pandoc==1.0.2
 pandocfilters==1.4.2
 passlib==1.7.1
 pathlib==1.0.1
-pkg-resources==0.0.0
+#pkg-resources==0.0.0
 plac==0.9.6
 ply==3.11
 preshed==1.0.0
