@@ -125,3 +125,5 @@ Werkzeug==0.14.1
 wrapt==1.10.11
 WTForms==2.2.1
 zope.interface==4.5.0
+
+python3.6
