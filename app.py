@@ -10,16 +10,21 @@ import os
 #for chatbot
 import random
 
+# for database
+DATABASE_URL = os.environ.get('DATABASE_URL')
+
 app = Flask(__name__)
 
 # Config MySQL, must be changed
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'root'
-app.config['MYSQL_DB'] = 'myflaskapp'
-app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
+#app.config['MYSQL_HOST'] = 'localhost'
+#app.config['MYSQL_USER'] = 'root'
+#app.config['MYSQL_PASSWORD'] = 'root'
+#app.config['MYSQL_DB'] = 'myflaskapp'
+#app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
+conn = psycopg2.connect(DATABASE_URL)
+
 # init MYSQL
-mysql = MySQL(app)
+#mysql = MySQL(app)
 
 #Articles = Articles()
 
@@ -64,7 +69,8 @@ def articles():
 @app.route('/conversations/<string:id>/')
 def article(id):
     # Create cursor
-    cur = mysql.connection.cursor()
+    #cur = mysql.connection.cursor()
+    cur = conn.cursor()
 
     # Get article
     result = cur.execute("SELECT * FROM articles WHERE id = %s", [id])
@@ -97,7 +103,8 @@ def register():
         password = sha256_crypt.encrypt(str(form.password.data))
 
         # Create cursor
-        cur = mysql.connection.cursor()
+        #cur = mysql.connection.cursor()
+        cur = conn.cursor()
 
         # Execute query
         cur.execute("INSERT INTO users(name, email, username, password) VALUES(%s, %s, %s, %s)", (name, email, username, password))
@@ -123,7 +130,8 @@ def login():
         password_candidate = request.form['password']
 
         # Create cursor
-        cur = mysql.connection.cursor()
+        #cur = mysql.connection.cursor()
+        cur = conn.cursor()
 
         # Get user by username
         result = cur.execute("SELECT * FROM users WHERE username = %s", [username])
@@ -176,7 +184,8 @@ def logout():
 @is_logged_in
 def dashboard():
     # Create cursor
-    cur = mysql.connection.cursor()
+    #cur = mysql.connection.cursor()
+    cur = conn.cursor()
 
     # Get articles
     result = cur.execute("SELECT * FROM conversations")
@@ -206,7 +215,7 @@ def add_article():
         body = form.body.data
 
         # Create Cursor
-        cur = mysql.connection.cursor()
+        cur = conn.cursor()
 
         # Execute
         cur.execute("INSERT INTO conversations(title, body, author) VALUES(%s, %s, %s)",(title, body, session['username']))
@@ -229,7 +238,7 @@ def add_article():
 @is_logged_in
 def edit_article(id):
     # Create cursor
-    cur = mysql.connection.cursor()
+    cur = conn.cursor()
 
     # Get article by id
     result = cur.execute("SELECT * FROM conversations WHERE id = %s", [id])
@@ -248,7 +257,8 @@ def edit_article(id):
         body = request.form['body']
 
         # Create Cursor
-        cur = mysql.connection.cursor()
+        #cur = mysql.connection.cursor()
+        cur = conn.cursor()
         app.logger.info(title)
         # Execute
         cur.execute ("UPDATE conversations SET title=%s, body=%s WHERE id=%s",(title, body, id))
@@ -269,7 +279,8 @@ def edit_article(id):
 @is_logged_in
 def delete_article(id):
     # Create cursor
-    cur = mysql.connection.cursor()
+    #cur = mysql.connection.cursor()
+    cur = conn.cursor()
 
     # Execute
     cur.execute("DELETE FROM conversations WHERE id = %s", [id])
