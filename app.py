@@ -6,6 +6,7 @@ from functools import wraps
 import requests
 import json
 import os
+import psycopg2
 
 #for chatbot
 import random
