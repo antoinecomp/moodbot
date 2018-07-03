@@ -23,6 +23,7 @@ app = Flask(__name__)
 #app.config['MYSQL_DB'] = 'myflaskapp'
 #app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 conn = psycopg2.connect(DATABASE_URL)
+conn.setAutoCommit(true)
 
 # init MYSQL
 #mysql = MySQL(app)

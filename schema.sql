@@ -9,7 +9,9 @@ create table users (
 );
 
 drop table if exists articles;
-create table articles (
+
+drop table if exists conversations;
+create table conversations (
   id int PRIMARY KEY,
   title varchar,
   author varchar,
