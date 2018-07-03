@@ -50,7 +50,7 @@ def bot():
 @app.route('/conversations')
 def articles():
     # Create cursor
-    cur = mysql.connection.cursor()
+    cur = psycopg2.connection.cursor()
 
     # Get articles
     result = cur.execute("SELECT * FROM articles")
@@ -111,7 +111,7 @@ def register():
         cur.execute("INSERT INTO users(name, email, username, password) VALUES(%s, %s, %s, %s)", (name, email, username, password))
 
         # Commit to DB
-        mysql.connection.commit()
+        psycopg2.connection.commit()
 
         # Close connection
         cur.close()
@@ -222,7 +222,7 @@ def add_article():
         cur.execute("INSERT INTO conversations(title, body, author) VALUES(%s, %s, %s)",(title, body, session['username']))
 
         # Commit to DB
-        mysql.connection.commit()
+        psycopg2.connection.commit()
 
         #Close connection
         cur.close()
@@ -264,7 +264,7 @@ def edit_article(id):
         # Execute
         cur.execute ("UPDATE conversations SET title=%s, body=%s WHERE id=%s",(title, body, id))
         # Commit to DB
-        mysql.connection.commit()
+        psycopg2.connection.commit()
 
         #Close connection
         cur.close()
@@ -287,7 +287,7 @@ def delete_article(id):
     cur.execute("DELETE FROM conversations WHERE id = %s", [id])
 
     # Commit to DB
-    mysql.connection.commit()
+    psycopg2.connection.commit()
 
     #Close connection
     cur.close()
