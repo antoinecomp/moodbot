@@ -111,7 +111,7 @@ def register():
         cur.execute("INSERT INTO users(name, email, username, password) VALUES(%s, %s, %s, %s)", (name, email, username, password))
 
         # Commit to DB
-        psycopg2.connection.commit()
+        conn.commit()
 
         # Close connection
         cur.close()
