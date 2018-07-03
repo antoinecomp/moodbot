@@ -137,7 +137,7 @@ def login():
         # Get user by username
         result = cur.execute("SELECT * FROM users WHERE username = %s", [username])
 
-		data = cur.fetchone()
+        data = cur.fetchone()
         if data:
             # Get stored hash
             password = data['password']
