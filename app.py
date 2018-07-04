@@ -58,7 +58,7 @@ def articles():
 
     articles = cur.fetchall()
 
-    if result > 0:
+    if articles:
         return render_template('articles.html', articles=articles)
     else:
         msg = 'No Conversations Found'
