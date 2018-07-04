@@ -210,7 +210,7 @@ class ArticleForm(Form):
 # Add Conversation
 @app.route('/add_conversation', methods=['GET', 'POST'])
 @is_logged_in
-def add_article():
+def add_conversation():
     form = ArticleForm(request.form)
     if request.method == 'POST' and form.validate():
         title = form.title.data
