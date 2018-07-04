@@ -56,9 +56,9 @@ def articles():
     # Get articles
     result = cur.execute("SELECT * FROM articles")
 
-    articles = cur.fetchall()
+    discussions = cur.fetchall()
 
-    if articles:
+    if discussions:
         return render_template('articles.html', articles=articles)
     else:
         msg = 'No Conversations Found'
@@ -192,9 +192,9 @@ def dashboard():
     # Get articles
     result = cur.execute("SELECT * FROM conversations")
 
-    articles = cur.fetchall()
+    discussions = cur.fetchall()
 
-    if result > 0:
+    if discussions:
         return render_template('dashboard.html', articles=articles)
     else:
         msg = 'No Articles Found'
