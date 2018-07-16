@@ -1,34 +1,9 @@
 from flask import Flask, render_template, flash, redirect, url_for, session, request, logging, jsonify
-from flask_mysqldb import MySQL
-from wtforms import Form, StringField, TextAreaField, PasswordField, validators
-from passlib.hash import sha256_crypt
 from functools import wraps
+from app import app
 import requests
-import json
-import os
-import psycopg2
 
-#for chatbot
-import random
-
-# for database
-DATABASE_URL = os.environ.get('DATABASE_URL')
-
-app = Flask(__name__)
-
-# Config MySQL, must be changed
-#app.config['MYSQL_HOST'] = 'localhost'
-#app.config['MYSQL_USER'] = 'root'
-#app.config['MYSQL_PASSWORD'] = 'root'
-#app.config['MYSQL_DB'] = 'myflaskapp'
-#app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
-conn = psycopg2.connect(DATABASE_URL)
-#conn.setAutoCommit(true)
-
-# init MYSQL
-#mysql = MySQL(app)
-
-#Articles = Articles()
+from app.forms import *
 
 # Index
 @app.route('/')
@@ -46,26 +21,24 @@ def about():
 def bot():
     return render_template('bot.html')
 
-
 # Articles
 @app.route('/conversations')
 def articles():
     # Create cursor
-    cur = psycopg2.connection.cursor()
+    cur = mysql.connection.cursor()
 
     # Get articles
     result = cur.execute("SELECT * FROM articles")
 
-    discussions = cur.fetchall()
+    articles = cur.fetchall()
 
-    if discussions:
+    if result > 0:
         return render_template('articles.html', articles=articles)
     else:
         msg = 'No Conversations Found'
         return render_template('conversations.html', msg=msg)
     # Close connection
     cur.close()
-
 
 #Single Article
 @app.route('/conversations/<string:id>/')
@@ -80,19 +53,6 @@ def article(id):
     article = cur.fetchone()
 
     return render_template('conversation.html', article=article)
-
-
-# Register Form Class
-class RegisterForm(Form):
-    name = StringField('Name', [validators.Length(min=1, max=50)])
-    username = StringField('Username', [validators.Length(min=4, max=25)])
-    email = StringField('Email', [validators.Length(min=6, max=50)])
-    password = PasswordField('Password', [
-        validators.DataRequired(),
-        validators.EqualTo('confirm', message='Passwords do not match')
-    ])
-    confirm = PasswordField('Confirm Password')
-
 
 # User Register
 @app.route('/register', methods=['GET', 'POST'])
@@ -202,11 +162,6 @@ def dashboard():
     # Close connection
     cur.close()
 
-# Article Form Class
-class ArticleForm(Form):
-    title = StringField('Title', [validators.Length(min=1, max=200)])
-    body = TextAreaField('Body', [validators.Length(min=30)])
-
 # Add Conversation
 @app.route('/add_conversation', methods=['GET', 'POST'])
 @is_logged_in
@@ -309,10 +264,3 @@ def chat():
     except Exception as e:
         print(e)
         return jsonify({"status":"success","response":"Sorry I am not trained to do that yet..."})
-
-if __name__ == '__main__':
-	# must be changed
-    app.secret_key='secret123'
-    port = int(os.environ.get("PORT", 5000))
-    #app.run(port=8000,debug=True)
-    app.run(host='0.0.0.0', port=port)
