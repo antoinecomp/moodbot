@@ -44,7 +44,7 @@ imagesize==1.0.0
 incremental==17.5.0
 ipython-genutils==0.2.0
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 jmespath==0.9.3
 jsonpickle==0.9.6
 jsonschema==2.6.0
