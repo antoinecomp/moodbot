@@ -36,7 +36,7 @@ graphviz==0.8.3
 greenlet==0.4.13
 grpcio==1.12.1
 h5py==2.8.0
-html5lib==0.9999999
+html5lib==0.999999999
 humanfriendly==4.12.1
 hyperlink==18.0.0
 idna==2.6
